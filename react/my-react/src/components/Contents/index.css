@@ -1,0 +1,8 @@
+.contents{
+	display: inline-block;
+	padding:0 10px;
+	width: 80%;
+	box-sizing: border-box;
+	font-size: 16px;
+	vertical-align: top;
+}

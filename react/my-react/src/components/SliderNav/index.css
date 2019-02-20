@@ -1,0 +1,11 @@
+.sliderNav{
+	display: inline-block;
+	padding:0 10px;
+	width: 20%;
+	box-sizing: border-box;
+	font-size: 16px;
+	height: 300px;
+}
+.ui.vertical.menu {
+    width: 100%;
+}

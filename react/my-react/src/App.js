@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Ui from './components/ui/index.js';
+import Contai from './components/Contai/index.js';
+import Login from './components/login/index.jsx';
+//import { Message, Grid, Image, Dropdown, Input} from 'semantic-ui-react';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className='title'>hello world</h1>
-          <Ui />
+       	{/**<Login />
+       	**/}
+        <Contai />  
       </div>
     );
   }
