@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Table, Icon} from 'semantic-ui-react';
 class Messages extends Component {
 	constructor(){
 		super(...arguments);
@@ -9,7 +9,56 @@ class Messages extends Component {
 	}
 	render(){
 		return (
-			<div><p>这是信息页面!!!</p></div>
+			<div>
+				 <Table celled striped>
+				    <Table.Header>
+				      <Table.Row>
+				        <Table.HeaderCell colSpan='3'>Git Repository</Table.HeaderCell>
+				      </Table.Row>
+				    </Table.Header>
+				
+				    <Table.Body>
+				    
+				      <Table.Row>
+				        <Table.Cell collapsing>
+				          <Icon name='folder' /> node_modules
+				        </Table.Cell>
+				        <Table.Cell>Initial commit</Table.Cell>
+				        <Table.Cell collapsing textAlign='right'>
+				          10 hours ago
+				        </Table.Cell>
+				      </Table.Row>
+				      <Table.Row>
+				        <Table.Cell>
+				          <Icon name='folder' /> test
+				        </Table.Cell>
+				        <Table.Cell>Initial commit</Table.Cell>
+				        <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
+				      </Table.Row>
+				      <Table.Row>
+				        <Table.Cell>
+				          <Icon name='folder' /> build
+				        </Table.Cell>
+				        <Table.Cell>Initial commit</Table.Cell>
+				        <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
+				      </Table.Row>
+				      <Table.Row>
+				        <Table.Cell>
+				          <Icon name='file outline' /> package.json
+				        </Table.Cell>
+				        <Table.Cell>Initial commit</Table.Cell>
+				        <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
+				      </Table.Row>
+				      <Table.Row>
+				        <Table.Cell>
+				          <Icon name='file outline' /> Gruntfile.js
+				        </Table.Cell>
+				        <Table.Cell>Initial commit</Table.Cell>
+				        <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
+				      </Table.Row>
+				    </Table.Body>
+				  </Table>
+			</div>
 		)
 	}
 }

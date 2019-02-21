@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
-import  createBrowserHistory from 'history/createBrowserHistory';
+import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 import Homes from '../Homes/index.js';
 import Messages from '../Messages/index.js';
 import Friends from '../Friends/index.js';
 import './index.css';
-const customHistory = createBrowserHistory();
 class Contents extends Component {
 	constructor(){
 		super(...arguments);
@@ -14,15 +12,12 @@ class Contents extends Component {
 		};
 	}
 	render(){
-		console.log('binahua')
 		return (
-			<Router history={customHistory}>
-				<div className='contents'>
-			    	<Route path='/' component={Homes} />
-			    	<Route path='/Messages' component={Messages} />
-			    	<Route path='/Friends' component={Friends} />
-		    	</div>
-    		</Router>
+			<div className='contents'>
+		    	<Route exact path='/app' component={Homes} />
+		    	<Route path='/app/Messages' component={Messages} />
+		    	<Route path='/app/Friends' component={Friends} />
+	    	</div>
 		)
 	}
 	
