@@ -29,9 +29,14 @@ class SliderNav extends Component {
                             Messages
                         </Link>
 			        </Menu.Item>
-			        <Menu.Item name='friends' active={this.state.activeItem === 'friends'}onClick={this.handleItemClick}>
+			        <Menu.Item name='friends' active={this.state.activeItem === 'friends'} onClick={this.handleItemClick}>
 			        	<Link to='/app/Friends'>
                             Friends
+                        </Link>
+			        </Menu.Item>
+			        <Menu.Item name='test' active={this.state.activeItem === 'test'} onClick={this.handleItemClick}>
+			        	<Link to='/app/Test'>
+                            测试
                         </Link>
 			        </Menu.Item>
 			      </Menu>

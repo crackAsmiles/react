@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 import Homes from '../Homes/index.js';
 import Messages from '../Messages/index.js';
 import Friends from '../Friends/index.js';
+import Test from '../test/index.js';
 import './index.css';
 class Contents extends Component {
 	constructor(){
@@ -17,6 +18,7 @@ class Contents extends Component {
 		    	<Route exact path='/app' component={Homes} />
 		    	<Route path='/app/Messages' component={Messages} />
 		    	<Route path='/app/Friends' component={Friends} />
+		    	<Route path='/app/Test' component={Test} />
 	    	</div>
 		)
 	}
