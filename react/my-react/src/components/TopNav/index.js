@@ -22,7 +22,7 @@ class TopNav extends Component {
 	render(){
 		return (
 			<Segment>
-				<Image className='logo' src='http://localhost:3000/image/01.jpg' size='medium' circular/>
+				<Image className='logo' src='/image/01.jpg' size='medium' circular/>
 				<Button className='singOut' inverted color='violet' onClick={this.logOut}>退出登陆</Button>
 			</Segment>
 		)
